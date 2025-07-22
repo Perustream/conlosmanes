@@ -1,18 +1,16 @@
-
 <!DOCTYPE html>
-
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<meta content="#6600cc" name="theme-color"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
-<link href="manifest.json" rel="manifest"/>
-<link href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" rel="icon" type="image/png"/>
-<link href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" rel="apple-touch-icon"/>
-<script>
-    if ('serviceWorker' in navigator) {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <meta content="#2c2f4e" name="theme-color"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+  <link href="manifest.json" rel="manifest"/>
+  <link href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" rel="icon" type="image/png"/>
+  <link href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" rel="apple-touch-icon"/>
+  <script>
+   if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('service-worker.js').then(function (registration) {
           console.log('ServiceWorker registrado con éxito:', registration.scope);
@@ -22,14 +20,11 @@
       });
     }
   </script>
-<title>Con los manes radio</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<style>
-    
-
-
-
-
+  <title>
+   Con los manes radio
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <style>
     * {
       margin: 0;
       padding: 0;
@@ -247,14 +242,15 @@ html, body {
   align-items: center;
   justify-content: flex-start;
 }
-</style>
-<meta content="#000000" name="theme-color"><style>
-:root {
+   </style>
+   <meta content="#000000" name="theme-color">
+    <style>
+     :root {
   --dynamic-bg: url('https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg');
 }
-</style>
-<style>
-#blur-background {
+    </style>
+    <style>
+     #blur-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -278,10 +274,10 @@ html, body {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
-</style>
-<link href="manifest.json" rel="manifest"/>
-<script>
-  if ('serviceWorker' in navigator) {
+    </style>
+    <link href="manifest.json" rel="manifest"/>
+    <script>
+     if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('service-worker.js').then(function (registration) {
         console.log('ServiceWorker registrado con éxito:', registration.scope);
@@ -290,43 +286,112 @@ html, body {
       });
     });
   }
-</script>
-</meta></link></head>
-<body style="height: 100dvh; padding-top: env(safe-area-inset-top); background-color: transparent;">
-<div id="blur-background"></div>
-<div id="blur-overlay"></div>
-<audio id="radio" src="https://stream.zeno.fm/z1gpzd2sshruv" style="display: none;"></audio>
-<div class="header">Ahora escuchas:</div>
-<div class="station">Con los manes radio</div>
-<div class="cover">
-<img alt="Logo Cover" src="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg"/>
-</div>
-<div class="social-icons">
-<a href="tel:+50489647810"><i class="fas fa-phone" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
-<a href="https://wa.me/50489647810" target="_blank"><i class="fab fa-whatsapp" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
-<a href="https://www.facebook.com/profile.php?id=100083165175642" target="_blank"><i class="fab fa-facebook" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
-<a href="https://www.conlosmanes.com/" target="_blank"><i class="fas fa-globe" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
-<a href="https://www.youtube.com/@LosManesOficialhn" target="_blank"><i class="fab fa-youtube" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
-<a href="https://www.tiktok.com/@losmanesoficial?_t=ZT-8yEI752utvD&amp;_r=1" target="_blank"><i class="fab fa-tiktok" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
-</div>
-<div class="song-info">
-<div class="title">Cargando canción...</div>
-<div class="artist">Cargando artista...</div>
-</div>
-<div class="controls">
-<i class="fas fa-backward" style="font-size: 36px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);"></i>
-<i class="fas fa-play" id="playPauseBtn" style="font-size: 48px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; width: 88px; height: 88px; display: flex; justify-content: center; align-items: center; text-align: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);"></i>
-<i class="fas fa-forward" style="font-size: 36px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);"></i>
-</div>
-<div class="bottom-actions" style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; gap: 12px; flex-wrap: nowrap; padding: 0 12px; text-align: center;margin-top: 60px;">
-<div onclick="compartir()"><i class="fas fa-share"></i><span>Compartir</span></div>
-<div><i class="fas fa-star"></i><span>Calificar</span></div>
-<div onclick="activarTemporizador()"><i class="fas fa-clock"></i><span>Temporizador</span></div>
-<div onclick="abrirFormularioReporte()"><i class="fas fa-exclamation-triangle"></i><span>Reportar</span></div>
-<div id="favoritoBtn" onclick="alternarFavorito()"><i class="fas fa-heart" id="iconoFavorito"></i><span id="textoFavorito">Agregar a favoritos</span></div>
-</div>
-<script>
-      const audio = document.getElementById("radio");
+    </script>
+   </meta>
+  </link>
+ </head>
+ <body style="padding-top: 80px;">
+  <div id="blur-background">
+  </div>
+  <div id="blur-overlay">
+  </div>
+  <audio id="radio" src="https://stream.zeno.fm/z1gpzd2sshruv" style="display: none;">
+  </audio>
+  <div class="header">
+   Ahora escuchas:
+  </div>
+  <div class="station">
+   Con los manes radio
+  </div>
+  <div class="cover">
+   <img alt="Logo Cover" src="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg"/>
+  </div>
+  <div class="social-icons">
+   <a href="tel:+50489647810">
+    <i class="fas fa-phone" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    </i>
+   </a>
+   <a href="https://wa.me/50489647810" target="_blank">
+    <i class="fab fa-whatsapp" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    </i>
+   </a>
+   <a href="https://www.facebook.com/profile.php?id=100083165175642" target="_blank">
+    <i class="fab fa-facebook" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    </i>
+   </a>
+   <a href="https://www.conlosmanes.com/" target="_blank">
+    <i class="fas fa-globe" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    </i>
+   </a>
+   <a href="https://www.youtube.com/@LosManesOficialhn" target="_blank">
+    <i class="fab fa-youtube" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    </i>
+   </a>
+   <a href="https://www.tiktok.com/@losmanesoficial?_t=ZT-8yEI752utvD&amp;_r=1" target="_blank">
+    <i class="fab fa-tiktok" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    </i>
+   </a>
+  </div>
+  <div class="song-info">
+   <div class="title">
+    Cargando canción...
+   </div>
+   <div class="artist">
+    Cargando artista...
+   </div>
+  </div>
+  <div class="controls">
+   <i class="fas fa-backward" style="font-size: 36px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+   </i>
+   <i class="fas fa-play" id="playPauseBtn" style="font-size: 48px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; width: 88px; height: 88px; display: flex; justify-content: center; align-items: center; text-align: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);">
+   </i>
+   <i class="fas fa-forward" style="font-size: 36px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+   </i>
+  </div>
+  <div class="bottom-actions" style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; gap: 12px; flex-wrap: nowrap; padding: 0 12px; text-align: center;margin-top: 60px;">
+   <div onclick="compartir()">
+    <i class="fas fa-share">
+    </i>
+    <span>
+     Compartir
+    </span>
+   </div>
+   <div>
+    <i class="fas fa-star">
+    </i>
+    <span>
+     Calificar
+    </span>
+   </div>
+   <div onclick="activarTemporizador()">
+    <i class="fas fa-clock">
+    </i>
+    <span>
+     Temporizador
+    </span>
+   </div>
+   <div onclick="abrirFormularioReporte()">
+    <i class="fas fa-exclamation-triangle">
+    </i>
+    <span>
+     Reportar
+    </span>
+   </div>
+   <div id="favoritoBtn" onclick="alternarFavorito()">
+    <i class="fas fa-heart" id="iconoFavorito">
+    </i>
+    <span id="textoFavorito">
+     Agregar a favoritos
+    </span>
+   </div>
+  </div>
+  <div style="margin: 40px 0; text-align:center;">
+   <button id="installBtn" style="background: rgba(255, 255, 255, 0.1); color: white; font-size: 16px; padding: 10px 20px; border: none; border-radius: 12px; cursor: pointer; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); display: none;">
+    📲 Instalar App
+   </button>
+  </div>
+  <script>
+   const audio = document.getElementById("radio");
       const playPauseBtn = document.getElementById("playPauseBtn");
 
       playPauseBtn.addEventListener("click", () => {
@@ -340,8 +405,9 @@ html, body {
           playPauseBtn.classList.add("fa-play");
         }
       });
-    </script><script>
-document.addEventListener("DOMContentLoaded", function () {
+  </script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function () {
   async function fetchMetadata() {
     try {
       const res = await fetch("https://free.miradio.pro/icy?url=https://stream.zeno.fm/z1gpzd2sshruv");
@@ -401,9 +467,9 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(fetchMetadata, 15000);
   fetchMetadata();
 });
-</script>
-<script>
-  function compartir() {
+  </script>
+  <script>
+   function compartir() {
     if (navigator.share) {
       navigator.share({
         title: 'Con Los Manes Radio',
@@ -416,9 +482,9 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("La opción de compartir no está disponible en este dispositivo.");
     }
   }
-</script>
-<script>
-  function activarTemporizador() {
+  </script>
+  <script>
+   function activarTemporizador() {
     const minutos = prompt("¿En cuántos minutos deseas que se apague la radio?");
     const tiempo = parseInt(minutos);
     if (!isNaN(tiempo) && tiempo > 0) {
@@ -437,9 +503,9 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Ingresa un número válido de minutos.");
     }
   }
-</script>
-<script>
-  function abrirFormularioReporte() {
+  </script>
+  <script>
+   function abrirFormularioReporte() {
     const nombre = prompt("¿Cuál es tu nombre?");
     if (!nombre) {
       alert("Debes ingresar tu nombre para enviar un reporte.");
@@ -455,9 +521,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const mailto = `mailto:micasaperu21@gmail.com?subject=Reporte%20de%20usuario%20Con%20Los%20Manes&body=Nombre: ${encodeURIComponent(nombre)}%0AReporte: ${encodeURIComponent(mensaje)}`;
     window.location.href = mailto;
   }
-</script>
-<script>
-  function alternarFavorito() {
+  </script>
+  <script>
+   function alternarFavorito() {
     const icono = document.getElementById("iconoFavorito");
     const texto = document.getElementById("textoFavorito");
 
@@ -486,29 +552,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("textoFavorito").textContent = "Favorito";
     }
   });
-</script>
-<!-- Botón flotante para instalar -->
-<button id="installBtn" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 18px;
-  font-size: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  cursor: pointer;
-  display: none;
-">
-<img src="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" style="width:32px; height:32px; border-radius: 50%;"/>
-</button>
-</body>
-<script>
+  </script>
+  <!-- Botón flotante para instalar -->
+ </body>
+ <script>
   let deferredPrompt;
 
   window.addEventListener('beforeinstallprompt', (e) => {
@@ -538,5 +585,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
-</script>
+ </script>
 </html>
