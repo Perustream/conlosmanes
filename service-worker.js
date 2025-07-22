@@ -1,20 +1,16 @@
 
-self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open('con-los-manes-cache').then(function(cache) {
-      return cache.addAll([
-        './con-los-manes-radio-FUNCIONAL-PWA.html',
-        './manifest.json',
-        './'
-      ]);
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open('static-v1').then(cache => {
+      return cache.addAll(['index.html']);
     })
   );
 });
 
-self.addEventListener('fetch', function(e) {
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request);
     })
   );
 });
