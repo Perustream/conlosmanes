@@ -2,17 +2,16 @@
 <!DOCTYPE html>
 
 <html lang="es">
-
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-  <meta name="theme-color" content="#000000"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" type="image/png">
-  <link rel="apple-touch-icon" href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg">
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="#6600cc" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<link href="manifest.json" rel="manifest"/>
+<link href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" rel="icon" type="image/png"/>
+<link href="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" rel="apple-touch-icon"/>
+<script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('service-worker.js').then(function (registration) {
@@ -23,9 +22,8 @@
       });
     }
   </script>
-
 <title>Con los manes radio</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
     
 
@@ -250,7 +248,7 @@ html, body {
   justify-content: flex-start;
 }
 </style>
-<meta content="#000000" name="theme-color"/><style>
+<meta content="#000000" name="theme-color"><style>
 :root {
   --dynamic-bg: url('https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg');
 }
@@ -281,9 +279,7 @@ html, body {
   z-index: -1;
 }
 </style>
-
-
-<link rel="manifest" href="manifest.json">
+<link href="manifest.json" rel="manifest"/>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
@@ -295,10 +291,8 @@ html, body {
     });
   }
 </script>
-
-</head>
+</meta></link></head>
 <body style="height: 100dvh; padding-top: env(safe-area-inset-top); background-color: transparent;">
-
 <div id="blur-background"></div>
 <div id="blur-overlay"></div>
 <audio id="radio" src="https://stream.zeno.fm/z1gpzd2sshruv" style="display: none;"></audio>
@@ -313,7 +307,7 @@ html, body {
 <a href="https://www.facebook.com/profile.php?id=100083165175642" target="_blank"><i class="fab fa-facebook" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
 <a href="https://www.conlosmanes.com/" target="_blank"><i class="fas fa-globe" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
 <a href="https://www.youtube.com/@LosManesOficialhn" target="_blank"><i class="fab fa-youtube" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
-<a href="https://www.tiktok.com/@losmanesoficial?_t=ZT-8yEI752utvD&_r=1" target="_blank"><i class="fab fa-tiktok" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
+<a href="https://www.tiktok.com/@losmanesoficial?_t=ZT-8yEI752utvD&amp;_r=1" target="_blank"><i class="fab fa-tiktok" style="font-size: 24px; color: white; cursor: pointer; transition: transform 0.2s; background: rgba(255, 255, 255, 0.08); border-radius: 50%; padding: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"></i></a>
 </div>
 <div class="song-info">
 <div class="title">Cargando canción...</div>
@@ -423,8 +417,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 </script>
-
-
 <script>
   function activarTemporizador() {
     const minutos = prompt("¿En cuántos minutos deseas que se apague la radio?");
@@ -446,8 +438,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 </script>
-
-
 <script>
   function abrirFormularioReporte() {
     const nombre = prompt("¿Cuál es tu nombre?");
@@ -466,8 +456,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = mailto;
   }
 </script>
-
-
 <script>
   function alternarFavorito() {
     const icono = document.getElementById("iconoFavorito");
@@ -499,8 +487,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 </script>
-
-
 <!-- Botón flotante para instalar -->
 <button id="installBtn" style="
   position: fixed;
@@ -519,11 +505,9 @@ document.addEventListener("DOMContentLoaded", function () {
   cursor: pointer;
   display: none;
 ">
-  <img src='https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg' style='width:32px; height:32px; border-radius: 50%;'>
+<img src="https://i.postimg.cc/7P16p799/IMG-20250430-WA0323.jpg" style="width:32px; height:32px; border-radius: 50%;"/>
 </button>
-
 </body>
-
 <script>
   let deferredPrompt;
 
@@ -555,5 +539,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 </script>
-
 </html>
